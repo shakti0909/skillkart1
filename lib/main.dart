@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         behavior: HitTestBehavior.opaque,
         //  onTap: () => print('Tapped'),
         // onPressed: Screen2a(),
-             child: Screen1()//Screen1() // Stack(//one on another
+             child: Screen2a()//Screen1() // Stack(//one on another
     //             children: <Widget>[
     //   Container(
     //     child: Text(
