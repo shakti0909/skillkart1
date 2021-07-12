@@ -16,3 +16,7 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 ## first thing i did
 ![ss1] https://github.com/shakti0909/skillkart1/blob/task1/assets/ss1.PNG
+
+### last stuff of the week
+https://github.com/shakti0909/skillkart1/blob/task1/assets/ss2.PNG
+sorry
