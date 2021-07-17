@@ -16,17 +16,30 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
       // gives structure  to app
       body:
-       GestureDetector(
-          onLongPress: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Screen2a()),
-            );
-          },
-          behavior: HitTestBehavior.opaque,
+      Stack(
+        
+      //  GestureDetector(
+      //     onLongPress: () {
+      //       Navigator.push(
+      //         context,
+      //         MaterialPageRoute(builder: (context) => Screen2a()),
+      //       );
+      //     },
+      //     behavior: HitTestBehavior.opaque,
           //  onTap: () => print('Tapped'),
           // onPressed: Screen2a(),
-          child: Screen2a() //Screen1() // Stack(//one on another
+          children:[ Screen1(), 
+          GestureDetector(
+          onTap: () {
+            print('h');
+            Navigator.push(
+              context,
+              new MaterialPageRoute(builder: (context) => new Screen2a()),
+            );
+          },
+          behavior: HitTestBehavior.opaque,)]
+          
+          //Screen1() // Stack(//one on another
           //             children: <Widget>[
           //   Container(
           //     child: Text(

@@ -1,56 +1,13 @@
 // import 'dart:js';
-//
+
 import 'package:flutter/material.dart';
-import 'package:skillkartw1/Screen2b.dart';
-// var product=new Map();
-// product['0']=['Laptop','\$3000','zairza'];
-// Color color = Colors.white;
-// Expanded _buildButtonColumn(Color color, IconData icon, String label) {
-//   return Expanded(
-//       child: Column(
-//     mainAxisSize: MainAxisSize.max,
-//     mainAxisAlignment: MainAxisAlignment.end,
-//     children: [
-//       Container(
-//           height: 50,
-//           width: 140,
-//           color: Colors.blue[500],
-//           child: Icon(icon, color: color)),
-//       // Container(
-//   margin: const EdgeInsets.only(top: 8),
-//   child: Text(
-//     label,
-//     style: TextStyle(
-//       fontSize: 12,
-//       fontWeight: FontWeight.w400,
-//       color: color,
-//     ),
-//   ),
-// ),
-//     ],
-//   ));
-// }
-
-// // Widget
-
-//  Widget buttonSection =
-class Screen2a extends StatelessWidget {
+import 'screen2a.dart';
+class Screen2b extends StatelessWidget {
   // const ({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-//     return Screen2aa();
-//   }
-// }
-
-// class Screen2aa extends StatelessWidget {
-//   // const _Screen2astate({Key? key}) : super(key: key);
-
-//   @override
-//   Widget build(BuildContext context) {
-    return new Scaffold(
-
-    // return Scaffold(
+    return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
           title: Padding(
@@ -82,56 +39,82 @@ class Screen2a extends StatelessWidget {
           //   Container(height: 100,color: Colors.black,),
           //   Container(height: 100,color: Colors.black,),
           //   Container(height: 100,color: Colors.black,),
-          ListView.builder(
-              itemCount: 15,
-              itemBuilder: (context, index) {
-                return Card(
-                  child: Container(
+          GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+          itemCount: 15,
+           itemBuilder:(context,index){
+            return Card(
+              child: 
+              Container(
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Row(children: <Widget>[
-                        Image(
-                          height: 150,
-                          width: 300,
-                          image: AssetImage('assets/laptop.jfif'),
-                        ),
-                        Text(
-                          'Laptop',
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ]),
-                    ),
-                  ),
-                  // child: ListTile(
-                  //   // isThreeLine: true,
-                  //   // minLeadingWidth: 40,
-                  //   leading:
-                  //   Image(
-                  //     image:AssetImage('assets/laptop.jfif'),
-                  //     ),
-                  //   // onTap: () {},
-                  //   title: Text('',style: TextStyle(
-                  //   color: Colors.black,
-                  //   fontSize: 20.0,
-                  //   fontWeight: FontWeight.bold)),
-                  // ),
-                );
-              }),
+                      child: 
+                      Image(
+                        height: 150,
+                        width: 300,
+                        image: AssetImage('assets/laptop.jfif'),
+                      ),),));
+                    
+          }
+          )
+          // ListView.builder(
+          //     itemCount: 15,
+          //     itemBuilder: (context, index) {
+          //       return Card(
+          //         child: Container(
+          //           child: Padding(
+          //             padding: const EdgeInsets.all(8.0),
+          //             child: Row(children: <Widget>[
+          //               Image(
+          //                 height: 150,
+          //                 width: 300,
+          //                 image: AssetImage('assets/laptop.jfif'),
+          //               ),
+          //               Text(
+          //                 'Laptop',
+          //                 style: TextStyle(
+          //                     color: Colors.black,
+          //                     fontSize: 20.0,
+          //                     fontWeight: FontWeight.bold),
+          //               ),
+          //             ]),
+          //           ),
+          //         ),
+          //         // child: ListTile(
+          //         //   // isThreeLine: true,
+          //         //   // minLeadingWidth: 40,
+          //         //   leading:
+          //         //   Image(
+          //         //     image:AssetImage('assets/laptop.jfif'),
+          //         //     ),
+          //         //   // onTap: () {},
+          //         //   title: Text('',style: TextStyle(
+          //         //   color: Colors.black,
+          //         //   fontSize: 20.0,
+          //         //   fontWeight: FontWeight.bold)),
+          //         // ),
+          //       );
+          //     }),,
+          ,
           Container(
             height: 65,
             color: Colors.white,
             child: Row(children: [
               Expanded(
                   child: Text(
-                "View",
+                "Vw",
                 style: TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
                 ),
               )),
+              //  FlatButton(
+              //   onPressed: (){},
+              
+              // child: Image.asset('assets/icong.PNG')),
+              // FlatButton(
+              //   onPressed: (){},
+              
+              // child: Image.asset('assets/icongl.PNG')),
               FlatButton(
                   onPressed: () {
                     Navigator.push(
